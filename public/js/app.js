@@ -90,7 +90,8 @@ $(document).ready(function () {
       target = $(this).attr('smooth-scroll-target');
       $.smoothScroll({
          scrollTarget: target,
-         offset: -56
+         offset: -56,
+         speed: 'auto'
       });
       location.hash = target;
    });
