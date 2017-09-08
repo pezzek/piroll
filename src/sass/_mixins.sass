@@ -1,0 +1,39 @@
+=clear-gutter()
+   margin-left: 1rem * -1
+   margin-right: 1rem * -1
+
+=center-block()
+   margin-left: auto
+   margin-right: auto
+
+=button-variant($color, $background, $border-color)
+   color: $color
+   background-color: $background!important
+   border-color: $border-color!important
+
+   &:hover
+      color: $color
+      background-color: darken($background, 7.5%)!important
+      border-color: darken($border-color, 10%)!important
+
+=border-radius($radius)
+   -webkit-border-radius: $radius
+   -moz-border-radius: $radius
+   border-radius: $radius
+
+=transition($transition)
+   -webkit-transition: $transition
+   -moz-transition: $transition
+   -o-transition: $transition
+   transition: $transition
+
+=box-shadow($shadow)
+   -webkit-box-shadow: $shadow
+   -moz-box-shadow: $shadow
+   box-shadow: $shadow
+
+=linear-gradient($color1, $color2)
+   background-color: -webkit-linear-gradient($color1, $color2)
+   background-color: -moz-linear-gradient($color1, $color2)
+   background-color: -o-linear-gradient($color1, $color2)
+   background-color: linear-gradient($color1, $color2)

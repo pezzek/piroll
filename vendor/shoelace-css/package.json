@@ -1,0 +1,65 @@
+{
+  "_from": "shoelace-css",
+  "_id": "shoelace-css@1.0.0-beta22",
+  "_inBundle": false,
+  "_integrity": "sha512-TFsrQgX/yDUhiDKj7/Nz04ocls/AhBlYzVowmHPvSm3nJfFBuH5dvL87xU2dvBQVyh0npbKEv63kyJL6vwYkUA==",
+  "_location": "/shoelace-css",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "shoelace-css",
+    "name": "shoelace-css",
+    "escapedName": "shoelace-css",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/shoelace-css/-/shoelace-css-1.0.0-beta22.tgz",
+  "_shasum": "c55b0435ef4f978f4f7c6c8d3f2427fd74ab2c2d",
+  "_spec": "shoelace-css",
+  "_where": "A:\\Task\\Lesson\\Slicing\\Piroll\\vendor",
+  "author": {
+    "name": "Cory LaViska"
+  },
+  "bugs": {
+    "url": "https://github.com/claviska/shoelace-css/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A back to the basics CSS starter kit.",
+  "devDependencies": {
+    "bluebird": "^3.5.0",
+    "chalk": "^2.1.0",
+    "commander": "^2.11.0",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "dotenv": "^4.0.0",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.0.10",
+    "metalsmith": "^2.3.0",
+    "metalsmith-in-place": "^3.0.1",
+    "metalsmith-layouts": "^1.8.1",
+    "metalsmith-markdown": "^0.2.1",
+    "postcss": "^6.0.10",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
+    "s3": "^4.4.0",
+    "stylelint-config-standard": "^17.0.0",
+    "uglify-js": "^3.0.28",
+    "watch": "^1.0.2"
+  },
+  "homepage": "https://shoelace.style/",
+  "license": "MIT",
+  "name": "shoelace-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claviska/shoelace-css.git"
+  },
+  "version": "1.0.0-beta22"
+}

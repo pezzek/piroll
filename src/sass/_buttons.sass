@@ -1,0 +1,22 @@
+.button
+   &-click-me
+      padding-left: 3rem
+      padding-right: 3rem
+      height: 3.125rem
+      line-height: calc(3.125rem - 2px)
+      text-transform: uppercase
+      font-size: 0.8125rem
+      font-family: $font-family-heading
+      +border-radius(0)
+
+   &-primary
+      +button-variant(#fff, $primary-color, $primary-color)
+
+   &-load
+      height: 4.5rem
+      line-height: calc(4.5rem - 2px)
+      text-transform: uppercase
+      font-family: $font-family-heading
+      font-size: 0.825rem
+      +border-radius(0)
+      +button-variant(#999, #F5F5F5, #F5F5F5)

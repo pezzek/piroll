@@ -1,0 +1,215 @@
+.skill
+   &-label
+      display: block
+      margin-bottom: 1rem
+      text-transform: uppercase
+      font-family: $font-family-heading
+      font-size: 0.8125rem
+
+.progress-skill
+   background-color: #D8D8D8
+   height: 0.25rem
+   line-height: 0.25rem
+
+   .progress-bar
+      background-color: $primary-color
+
+.number
+   display: flex
+   align-items: center
+
+   &-icon
+      margin-right: 1rem
+      font-size: 3rem
+
+   &-attributes
+      font-family: $font-family-heading
+      text-transform: uppercase
+
+      &-quantity
+         font-size: 1.25rem
+
+      &-name
+         font-size: 0.8125rem
+
+.product
+   position: relative
+   height: 0
+   padding-bottom: 100%
+
+   &-image
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+
+      img
+         width: 100%
+         height: 100%
+         object-fit: cover
+
+   &-hover
+      position: absolute
+      z-index: $z-index-product-hover
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background-color: rgba(0, 0, 0, .6)
+      display: flex
+      justify-content: center
+      align-items: center
+      opacity: 0
+      +transition(all 0.3s)
+
+      a
+         color: #fff
+         font-size: 3rem
+
+   &:hover
+      .product-hover
+         opacity: 1
+
+.embed
+   width: 100%
+   height: 0
+   padding-bottom: 56.25%
+   position: relative
+
+   &-video
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      z-index: $z-index-embed
+
+   &-controls
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      z-index: $z-index-embed-controls
+      display: none
+
+      span
+         position: absolute
+         top: 50%
+         left: 50%
+         transform: translate(-50%, -50%)
+         color: #fff
+         width: 5em
+         height: 5em
+         line-height: 5em
+         text-align: center
+         background-color: $primary-color
+         +border-radius(50%)
+
+.work
+   display: flex
+   align-items: center
+   flex-direction: column
+
+   &-icon
+      font-size: 3rem
+      margin-bottom: 0.5rem
+      color: #999
+
+   &-attributes
+      text-align: center
+
+      &-name
+         margin-bottom: 0.5rem
+         text-transform: uppercase
+         font-family: $font-family-heading
+         font-size: 0.8125rem
+
+      &-desc
+         color: #888
+
+.slider
+   &-item
+      padding: 5rem 0
+      text-align: center
+      font-family: $font-family-heading
+
+      &-quotes
+         font-size: 1.25rem
+
+      &-author
+         text-transform: uppercase
+         font-size: 0.8125rem
+
+.slick
+   &-list
+      cursor: move
+
+   &-dots
+      li, li.slick-active
+         button:before
+            color: #fff
+
+      li
+         margin: 0
+         width: 1rem
+         height: 1rem
+
+         button
+            width: 1rem
+            height: 1rem
+            padding: 0
+
+            &:focus,
+            &:hover
+               background-color: transparent!important
+               +box-shadow(none!important)
+
+         button:before
+            width: 1rem
+            height: 1rem
+            line-height: 1rem
+            font-size: 0.5rem
+
+      li.slick-active
+         button::before
+            font-size: 0.75rem
+
+.client
+   text-align: center
+   padding: 0.5rem
+
+.contact
+   textarea, input
+      padding-left: 1.25rem
+      padding-right: 1.25rem
+      border-color: transparent
+      +border-radius(0)
+      +box-shadow(none)
+
+      &:focus
+         border-color: transparent
+         box-shadow: 0 0 .75rem $primary-color
+
+      &::-webkit-input-placeholder
+         color: #888
+
+      &::moz-placeholder
+         color: #888
+
+      &::placeholder
+         color: #888
+
+      &:ms-input-placeholder
+         color: #888
+
+      &:moz-placeholder
+         color: #888
+
+   textarea
+      padding-top: 0.5rem
+      padding-bottom: 0.5rem
+
+   input
+      height: 3rem

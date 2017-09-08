@@ -1,0 +1,128 @@
+.navbar
+   display: flex
+   flex-wrap: wrap
+   position: relative
+   align-items: center
+   justify-content: space-between
+   padding: 0.5rem 1rem
+   z-index: $z-index-navbar
+   +transition(all 0.3s)
+
+   > .container
+      display: flex
+      position: relative
+      flex-wrap: wrap
+      align-items: center
+      justify-content: space-between
+      padding: 0
+
+   &-sticky
+      background-color: #fff
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      +box-shadow(.25rem 0 .5rem #111)
+
+   &-backdrop
+      background-color: rgba(0, 0, 0, 0.6)
+      position: fixed
+      z-index: $z-index-navbar-backdrop
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      display: none
+
+.navbar-brand
+   display: inline-block
+   padding-top: 0.25rem
+   padding-bottom: 0.25rem
+   margin-right: 0.25rem
+   font-size: 1.25rem
+   white-space: nowrap
+
+.navbar-nav
+   display: block
+   position: fixed
+   padding-left: 0
+   margin-bottom: 0
+   list-style: none
+   right: 0
+   top: 0
+   width: 15rem
+   height: 100%
+   overflow-y: auto
+   background-color: #fff
+   transform: translateX(15rem)
+   +transition(transform 0.3s)
+
+   li
+      padding: 0.5rem 1rem
+      text-align: right
+
+   li > a
+      color: $text-color
+      font-weight: 500
+      font-family: $font-family-heading
+      font-size: 0.75rem
+      text-transform: uppercase
+
+      &:hover
+         text-decoration: none
+         color: $primary-color
+
+   li.navbar-nav-logo
+      padding: 1.5rem
+      text-align: left
+
+      > a
+         font-size: 1rem
+         font-family: $font-family-base
+         font-weight: bold
+
+         &:hover,
+         &:focus
+            color: inherit
+
+   li.navbar-nav-close
+      position: absolute
+      top: 1rem
+      right: 1rem
+
+      a
+         font-size: 1rem
+
+   &-slide
+      transform: translateX(0)
+      +box-shadow(0 -1rem 1rem #333)
+      z-index: $z-index-navbar-nav!important
+
+.navbar-toggler
+   padding: 0.25rem 0.75rem
+   font-size: 1.25rem
+   line-height: 1
+   background: transparent
+   border: 1px solid transparent
+   color: $text-color
+   +border-radius(4px)
+
+   &:hover, &:focus
+      background-color: $primary-color!important
+      border-color: transparent!important
+
+@media screen and (min-width: $media-lg)
+   .navbar-nav
+      display: flex
+      flex-direction: row
+      width: auto
+      height: auto
+      background-color: transparent
+      position: static
+      transform: none
+
+      &-logo, &-close
+         display: none
+
+   .navbar-toggler
+      display: none
