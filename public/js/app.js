@@ -83,6 +83,27 @@ $(document).ready(function () {
       dots: true,
       arrows: false
    });
+
+   // Smooth Scroll
+   $('[smooth-scroll-target]').on('click', function (e) {
+      e.preventDefault();
+      target = $(this).attr('smooth-scroll-target');
+      $.smoothScroll({
+         scrollTarget: target,
+         offset: -56
+      });
+      location.hash = target;
+   });
+
+   // Scroll Reveal
+   window.sr = ScrollReveal({
+      reset: true
+   });
+   sr.reveal('.block-reveal', {
+      duration: 500,
+      scale: 1,
+      viewOffset: {top: 56}
+   });
 });
 
 // Play button

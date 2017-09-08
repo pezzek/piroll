@@ -13,339 +13,323 @@
       <script src="public/js/jquery.min.js"></script>
       <script src="public/js/shoelace.js"></script>
       <script src="public/js/jquery.sticky-kit.min.js"></script>
+      <script src="public/js/jquery.smooth-scroll.min.js"></script>
+      <script src="public/js/scrollreveal.min.js"></script>
       <script src="public/plugins/slick/slick.min.js"></script>
       <title>Piroll</title>
    </head>
    <body>
       <div class="block-loader loader-bg loader-bg-dark loader-bg-xl"></div>
-      <div class="block block-sm block-bg" style="background-image: url('public/img/bg-1.jpg')" id="banner">
-         <span class="sr-only">Photo by Damian Zaleski on Unsplash</span>
-         <div class="navbar">
+      <div id="home">
+         <div class="block block-sm block-bg" style="background-image: url('public/img/bg-1.jpg')" id="banner">
+            <span class="sr-only">Photo by Damian Zaleski on Unsplash</span>
+            <div class="navbar">
+               <div class="container">
+                  <div class="navbar-brand">
+                     <a href="#"><img src="public/img/logo.png" alt="Logo Image" /></a>
+                  </div>
+                  <ul class="navbar-nav">
+                     <li class="navbar-nav-close"><a href="#" class="button-close" id="nav-close"><i class="fa fa-bars"></i></a></li>
+                     <li class="navbar-nav-logo"><a href="#">Piroll</a></li>
+                     <li><a href="#" smooth-scroll-target="#home">Home</a></li>
+                     <li><a href="#" smooth-scroll-target="#about">About</a></li>
+                     <li><a href="#" smooth-scroll-target="#work">Work</a></li>
+                     <li><a href="#" smooth-scroll-target="#process">Process</a></li>
+                     <li><a href="#" smooth-scroll-target="#services">Services</a></li>
+                     <li><a href="#" smooth-scroll-target="#testimonials">Testimonials</a></li>
+                     <li><a href="#" smooth-scroll-target="#contact">Contact</a></li>
+                  </ul>
+                  <button class="navbar-toggler"><i class="fa fa-bars"></i></button>
+                  <div class="navbar-backdrop"></div>
+               </div>
+            </div>
             <div class="container">
-               <div class="navbar-brand">
-                  <a href="#"><img src="public/img/logo.png" alt="Logo Image" /></a>
-               </div>
-               <ul class="navbar-nav">
-                  <li class="navbar-nav-close"><a href="#" class="button-close" id="nav-close"><i class="fa fa-bars"></i></a></li>
-                  <li class="navbar-nav-logo"><a href="#">Piroll</a></li>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Work</a></li>
-                  <li><a href="#">Process</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact</a></li>
-               </ul>
-               <button class="navbar-toggler"><i class="fa fa-bars"></i></button>
-               <div class="navbar-backdrop"></div>
-            </div>
-         </div>
-         <div class="container">
-            <div class="row row-full">
-               <div class="col-md-6 col-mid offset-md-6">
-                  <h1 class="mar-b-md">We Design and Develop</h1>
-                  <p class="lead">We are new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
-                  <a href="#" class="button button-primary button-click-me">Contact Us</a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="block">
-         <div class="container">
-            <div class="row row-center">
-               <div class="col-md-6 text-center">
-                  <h2 class="mar-b-md">About Us</h2>
-                  <p class="text-blur">Divide have don't man wherein air fourth. Own itself make have night won't make. A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd won't very all.</p>
-                  <img src="public/img/signature.png" alt="Signature" />
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="block block-lg block-bg" style="background-image: url('public/img/bg-2.jpg')">
-         <span class="sr-only">Photo by Bench Accounting on Unsplash</span>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <h2 class="mar-b-md">Professional Skills</h2>
-                  <div class="skill">
-                     <span class="skill-label">UI/UX Design 75%</span>
-                     <div class="progress progress-skill">
-                        <div class="progress-bar w-75"></div>
-                     </div>
-                  </div>
-                  <div class="skill">
-                     <span class="skill-label">Web Development 90%</span>
-                     <div class="progress progress-skill">mar-x-auto
-                        <div class="progress-bar w-90"></div>
-                     </div>
-                  </div>
-                  <div class="skill">
-                     <span class="skill-label">Marketing 65%</span>
-                     <div class="progress progress-skill">
-                        <div class="progress-bar w-65"></div>
-                     </div>
+               <div class="row row-full">
+                  <div class="col-md-6 col-mid offset-md-6">
+                     <h1 class="mar-b-md">We Design and Develop</h1>
+                     <p class="lead">We are new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
+                     <a href="#" class="button button-primary button-click-me">Contact Us</a>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <div class="block block-primary">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 col-lg-3">
-                  <div class="number">
-                     <div class="number-icon"><i class="pe-7s-portfolio"></i></div>
-                     <div class="number-attributes">
-                        <span class="number-attributes-quantity">548</span>
-                        <br />
-                        <span class="number-attributes-name">Projects Completed</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="number">
-                     <div class="number-icon"><i class="pe-7s-clock"></i></div>
-                     <div class="number-attributes">
-                        <span class="number-attributes-quantity">1465</span>
-                        <br />
-                        <span class="number-attributes-name">Working Hours</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="number">
-                     <div class="number-icon"><i class="pe-7s-star"></i></div>
-                     <div class="number-attributes">
-                        <span class="number-attributes-quantity">612</span>
-                        <br />
-                        <span class="number-attributes-name">Positive Feedbacks</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="number">
-                     <div class="number-icon"><i class="pe-7s-clock"></i></div>
-                     <div class="number-attributes">
-                        <span class="number-attributes-quantity">735</span>
-                        <br />
-                        <span class="number-attributes-name">Happy Clients</span>
-                     </div>
+      <div id="about">
+         <div class="block block-reveal">
+            <div class="container">
+               <div class="row row-center">
+                  <div class="col-md-6 text-center">
+                     <h2 class="mar-b-md">About Us</h2>
+                     <p class="text-blur">Divide have don't man wherein air fourth. Own itself make have night won't make. A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd won't very all.</p>
+                     <img src="public/img/signature.png" alt="Signature" />
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <div class="block block-flush">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-6 col-lg-3 col-flush">
-                  <div class="product">
-                     <div class="product-image">
-                        <img src="public/img/product-1.jpg" alt="Product 1" />
-                     </div>
-                     <div class="product-hover">
-                        <a href="#"><i class="pe-7s-look"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-6 col-lg-3 col-flush">
-                  <div class="product">
-                     <div class="product-image">
-                        <img src="public/img/product-2.jpg" alt="Product 1" />
-                     </div>
-                     <div class="product-hover">
-                        <a href="#"><i class="pe-7s-look"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-6 col-lg-3 col-flush">
-                  <div class="product">
-                     <div class="product-image">
-                        <img src="public/img/product-3.jpg" alt="Product 1" />
-                     </div>
-                     <div class="product-hover">
-                        <a href="#"><i class="pe-7s-look"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-6 col-lg-3 col-flush">
-                  <div class="product">
-                     <div class="product-image">
-                        <img src="public/img/product-4.jpg" alt="Product 1" />
-                     </div>
-                     <div class="product-hover">
-                        <a href="#"><i class="pe-7s-look"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-6 col-lg-3 col-flush">
-                  <div class="product">
-                     <div class="product-image">
-                        <img src="public/img/product-5.jpg" alt="Product 1" />
-                     </div>
-                     <div class="product-hover">
-                        <a href="#"><i class="pe-7s-look"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-6 col-lg-3 col-flush">
-                  <div class="product">
-                     <div class="product-image">
-                        <img src="public/img/product-6.jpg" alt="Product 1" />
-                     </div>
-                     <div class="product-hover">
-                        <a href="#"><i class="pe-7s-look"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-6 col-lg-3 col-flush">
-                  <div class="product">
-                     <div class="product-image">
-                        <img src="public/img/product-7.jpg" alt="Product 1" />
-                     </div>
-                     <div class="product-hover">
-                        <a href="#"><i class="pe-7s-look"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-6 col-lg-3 col-flush">
-                  <div class="product">
-                     <div class="product-image">
-                        <img src="public/img/product-8.jpg" alt="Product 1" />
-                     </div>
-                     <div class="product-hover">
-                        <a href="#"><i class="pe-7s-look"></i></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col col-flush">
-                  <a href="#" class="button button-block button-load">Load More Work</a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="block">
-         <div class="container">
-            <div class="row row-center">
-               <div class="col-md-6 text-center">
-                  <h2 class="mar-b-lg">Our Work Process</h2>
-                  <p class="text-blur mar-b-lg">Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold eyes.</p>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="embed">
-                     <div class="embed-video" id="player"></div>
-                     <div class="embed-controls" id="playButton"><span><i class="fa fa-play"></i></span></div>
-                     <script>
-                        var videoId = 'DRepbLikfNA';
-                     </script>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="block block-light">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 col-lg-3">
-                  <div class="work">
-                     <div class="work-icon"><i class="pe-7s-diamond"></i></div>
-                     <div class="work-attributes">
-                        <p class="work-attributes-name">UI / UX Design</p>
-                        <p class="work-attributes-desc">Be set fourth land god darkness make it wherein own</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="work">
-                     <div class="work-icon"><i class="pe-7s-arc"></i></div>
-                     <div class="work-attributes">
-                        <p class="work-attributes-name">Web Development</p>
-                        <p class="work-attributes-desc">A she'd them bring void moving third she'd kind fill</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="work">
-                     <div class="work-icon"><i class="pe-7s-phone"></i></div>
-                     <div class="work-attributes">
-                        <p class="work-attributes-name">App / Mobile</p>
-                        <p class="work-attributes-desc">Dominion man second spirit he, earth they're creeping</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="work">
-                     <div class="work-icon"><i class="pe-7s-joy"></i></div>
-                     <div class="work-attributes">
-                        <p class="work-attributes-name">Game Design</p>
-                        <p class="work-attributes-desc">Morning his saying moveth it multiply appear life be</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="work">
-                     <div class="work-icon"><i class="pe-7s-plane"></i></div>
-                     <div class="work-attributes">
-                        <p class="work-attributes-name">SEO / Marketing</p>
-                        <p class="work-attributes-desc">Give won't after land fill creeping meat you, may</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="work">
-                     <div class="work-icon"><i class="pe-7s-star"></i></div>
-                     <div class="work-attributes">
-                        <p class="work-attributes-name">Photography</p>
-                        <p class="work-attributes-desc">Creepeth one seas cattle grass give morning saw give</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="work">
-                     <div class="work-icon"><i class="pe-7s-magic-wand"></i></div>
-                     <div class="work-attributes">
-                        <p class="work-attributes-name">Graphic Design</p>
-                        <p class="work-attributes-desc">Open, great whales air rule for, fourth life whales</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="work">
-                     <div class="work-icon"><i class="pe-7s-paint-bucket"></i></div>
-                     <div class="work-attributes">
-                        <p class="work-attributes-name">Illustration</p>
-                        <p class="work-attributes-desc">Whales likeness hath, man kind for them air two don't</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="block block-md block-primary">
-         <div class="container">
-            <div class="row row-center">
-               <div class="col-md-8">
-                  <div class="slider" id="quotes">
-                     <div class="slider-wrapper">
-                        <div class="slider-item">
-                           <p class="slider-item-quotes">"Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizeable first project and am looking forward to start the next one asap."</p>
-                           <span class="slider-item-author">Michael Hopkins</span>
+      <div id="work">
+         <div class="block block-lg block-bg block-reveal" style="background-image: url('public/img/bg-2.jpg')">
+            <span class="sr-only">Photo by Bench Accounting on Unsplash</span>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <h2 class="mar-b-md">Professional Skills</h2>
+                     <div class="skill">
+                        <span class="skill-label">UI/UX Design 75%</span>
+                        <div class="progress progress-skill">
+                           <div class="progress-bar w-75"></div>
                         </div>
                      </div>
-                     <div class="slider-wrapper">
-                        <div class="slider-item">
-                           <p class="slider-item-quotes">"Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizeable first project and am looking forward to start the next one asap."</p>
-                           <span class="slider-item-author">Michael Hopkins</span>
+                     <div class="skill">
+                        <span class="skill-label">Web Development 90%</span>
+                        <div class="progress progress-skill">mar-x-auto
+                           <div class="progress-bar w-90"></div>
                         </div>
                      </div>
-                     <div class="slider-wrapper">
-                        <div class="slider-item">
-                           <p class="slider-item-quotes">"Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizeable first project and am looking forward to start the next one asap."</p>
-                           <span class="slider-item-author">Michael Hopkins</span>
+                     <div class="skill">
+                        <span class="skill-label">Marketing 65%</span>
+                        <div class="progress progress-skill">
+                           <div class="progress-bar w-65"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="block block-primary block-reveal">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-lg-3">
+                     <div class="number">
+                        <div class="number-icon"><i class="pe-7s-portfolio"></i></div>
+                        <div class="number-attributes">
+                           <span class="number-attributes-quantity">548</span>
+                           <br />
+                           <span class="number-attributes-name">Projects Completed</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="number">
+                        <div class="number-icon"><i class="pe-7s-clock"></i></div>
+                        <div class="number-attributes">
+                           <span class="number-attributes-quantity">1465</span>
+                           <br />
+                           <span class="number-attributes-name">Working Hours</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="number">
+                        <div class="number-icon"><i class="pe-7s-star"></i></div>
+                        <div class="number-attributes">
+                           <span class="number-attributes-quantity">612</span>
+                           <br />
+                           <span class="number-attributes-name">Positive Feedbacks</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="number">
+                        <div class="number-icon"><i class="pe-7s-clock"></i></div>
+                        <div class="number-attributes">
+                           <span class="number-attributes-quantity">735</span>
+                           <br />
+                           <span class="number-attributes-name">Happy Clients</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="block block-flush block-reveal">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-6 col-lg-3 col-flush">
+                     <div class="product">
+                        <div class="product-image">
+                           <img src="public/img/product-1.jpg" alt="Product 1" />
+                        </div>
+                        <div class="product-hover">
+                           <a href="#"><i class="pe-7s-look"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-flush">
+                     <div class="product">
+                        <div class="product-image">
+                           <img src="public/img/product-2.jpg" alt="Product 1" />
+                        </div>
+                        <div class="product-hover">
+                           <a href="#"><i class="pe-7s-look"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-flush">
+                     <div class="product">
+                        <div class="product-image">
+                           <img src="public/img/product-3.jpg" alt="Product 1" />
+                        </div>
+                        <div class="product-hover">
+                           <a href="#"><i class="pe-7s-look"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-flush">
+                     <div class="product">
+                        <div class="product-image">
+                           <img src="public/img/product-4.jpg" alt="Product 1" />
+                        </div>
+                        <div class="product-hover">
+                           <a href="#"><i class="pe-7s-look"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-flush">
+                     <div class="product">
+                        <div class="product-image">
+                           <img src="public/img/product-5.jpg" alt="Product 1" />
+                        </div>
+                        <div class="product-hover">
+                           <a href="#"><i class="pe-7s-look"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-flush">
+                     <div class="product">
+                        <div class="product-image">
+                           <img src="public/img/product-6.jpg" alt="Product 1" />
+                        </div>
+                        <div class="product-hover">
+                           <a href="#"><i class="pe-7s-look"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-flush">
+                     <div class="product">
+                        <div class="product-image">
+                           <img src="public/img/product-7.jpg" alt="Product 1" />
+                        </div>
+                        <div class="product-hover">
+                           <a href="#"><i class="pe-7s-look"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-flush">
+                     <div class="product">
+                        <div class="product-image">
+                           <img src="public/img/product-8.jpg" alt="Product 1" />
+                        </div>
+                        <div class="product-hover">
+                           <a href="#"><i class="pe-7s-look"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col col-flush">
+                     <a href="#" class="button button-block button-load">Load More Work</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="process">
+         <div class="block block-reveal">
+            <div class="container">
+               <div class="row row-center">
+                  <div class="col-md-6 text-center">
+                     <h2 class="mar-b-lg">Our Work Process</h2>
+                     <p class="text-blur mar-b-lg">Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold eyes.</p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <div class="embed">
+                        <div class="embed-video" id="player"></div>
+                        <div class="embed-controls" id="playButton"><span><i class="fa fa-play"></i></span></div>
+                        <script>
+                           var videoId = 'DRepbLikfNA';
+                        </script>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="services">
+         <div class="block block-light block-reveal">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-lg-3">
+                     <div class="work">
+                        <div class="work-icon"><i class="pe-7s-diamond"></i></div>
+                        <div class="work-attributes">
+                           <p class="work-attributes-name">UI / UX Design</p>
+                           <p class="work-attributes-desc">Be set fourth land god darkness make it wherein own</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="work">
+                        <div class="work-icon"><i class="pe-7s-arc"></i></div>
+                        <div class="work-attributes">
+                           <p class="work-attributes-name">Web Development</p>
+                           <p class="work-attributes-desc">A she'd them bring void moving third she'd kind fill</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="work">
+                        <div class="work-icon"><i class="pe-7s-phone"></i></div>
+                        <div class="work-attributes">
+                           <p class="work-attributes-name">App / Mobile</p>
+                           <p class="work-attributes-desc">Dominion man second spirit he, earth they're creeping</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="work">
+                        <div class="work-icon"><i class="pe-7s-joy"></i></div>
+                        <div class="work-attributes">
+                           <p class="work-attributes-name">Game Design</p>
+                           <p class="work-attributes-desc">Morning his saying moveth it multiply appear life be</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="work">
+                        <div class="work-icon"><i class="pe-7s-plane"></i></div>
+                        <div class="work-attributes">
+                           <p class="work-attributes-name">SEO / Marketing</p>
+                           <p class="work-attributes-desc">Give won't after land fill creeping meat you, may</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="work">
+                        <div class="work-icon"><i class="pe-7s-star"></i></div>
+                        <div class="work-attributes">
+                           <p class="work-attributes-name">Photography</p>
+                           <p class="work-attributes-desc">Creepeth one seas cattle grass give morning saw give</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="work">
+                        <div class="work-icon"><i class="pe-7s-magic-wand"></i></div>
+                        <div class="work-attributes">
+                           <p class="work-attributes-name">Graphic Design</p>
+                           <p class="work-attributes-desc">Open, great whales air rule for, fourth life whales</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="work">
+                        <div class="work-icon"><i class="pe-7s-paint-bucket"></i></div>
+                        <div class="work-attributes">
+                           <p class="work-attributes-name">Illustration</p>
+                           <p class="work-attributes-desc">Whales likeness hath, man kind for them air two don't</p>
                         </div>
                      </div>
                   </div>
@@ -353,75 +337,107 @@
             </div>
          </div>
       </div>
-      <div class="block block-md">
-         <div class="container">
-            <div class="row row-center">
-               <div class="col-md-4 col-lg">
-                  <div class="client">
-                     <img src="public/img/client-1.png" alt="Client 1">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg">
-                  <div class="client">
-                     <img src="public/img/client-2.png" alt="Client 2">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg">
-                  <div class="client">
-                     <img src="public/img/client-3.png" alt="Client 3">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg">
-                  <div class="client">
-                     <img src="public/img/client-4.png" alt="Client 4">
-                  </div>
-               </div>
-               <div class="col-md-4 col-lg">
-                  <div class="client">
-                     <img src="public/img/client-5.png" alt="Client 5">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="block block-light">
-         <div class="container">
-            <div class="row row-center">
-               <div class="col-md-6 text-center">
-                  <h2 class="mar-b-lg">Need a Project?</h2>
-                  <p class="text-blur mar-b-lg">Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
-               </div>
-            </div>
-            <div class="row row-center">
-               <div class="col-md-8">
-                  <form class="contact">
-                     <div class="row">
-                        <div class="col-md">
-                           <div class="input-field">
-                              <input type="text" name="name" placeholder="Your Name">
+      <div id="testimonials">
+         <div class="block block-md block-primary block-reveal">
+            <div class="container">
+               <div class="row row-center">
+                  <div class="col-md-8">
+                     <div class="slider" id="quotes">
+                        <div class="slider-wrapper">
+                           <div class="slider-item">
+                              <p class="slider-item-quotes">"Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizeable first project and am looking forward to start the next one asap."</p>
+                              <span class="slider-item-author">Michael Hopkins</span>
                            </div>
                         </div>
-                        <div class="col-md">
-                           <div class="input-field">
-                              <input type="email" name="email" placeholder="Your Email">
+                        <div class="slider-wrapper">
+                           <div class="slider-item">
+                              <p class="slider-item-quotes">"Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizeable first project and am looking forward to start the next one asap."</p>
+                              <span class="slider-item-author">Michael Hopkins</span>
+                           </div>
+                        </div>
+                        <div class="slider-wrapper">
+                           <div class="slider-item">
+                              <p class="slider-item-quotes">"Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizeable first project and am looking forward to start the next one asap."</p>
+                              <span class="slider-item-author">Michael Hopkins</span>
                            </div>
                         </div>
                      </div>
-                     <div class="input-field">
-                        <input type="text" name="title" placeholder="Your Title">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="block block-md block-reveal">
+            <div class="container">
+               <div class="row row-center">
+                  <div class="col-md-4 col-lg">
+                     <div class="client">
+                        <img src="public/img/client-1.png" alt="Client 1">
                      </div>
-                     <div class="input-field">
-                        <textarea name="name" placeholder="Your Comment" rows="6"></textarea>
+                  </div>
+                  <div class="col-md-4 col-lg">
+                     <div class="client">
+                        <img src="public/img/client-2.png" alt="Client 2">
                      </div>
-                     <div class="input-field text-center">
-                        <button type="button" name="button" class="button button-primary button-click-me">Send Message</button>
+                  </div>
+                  <div class="col-md-4 col-lg">
+                     <div class="client">
+                        <img src="public/img/client-3.png" alt="Client 3">
                      </div>
-                  </form>
+                  </div>
+                  <div class="col-md-4 col-lg">
+                     <div class="client">
+                        <img src="public/img/client-4.png" alt="Client 4">
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-lg">
+                     <div class="client">
+                        <img src="public/img/client-5.png" alt="Client 5">
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-      <div class="block block-dark">
+      <div id="contact">
+         <div class="block block-light block-reveal">
+            <div class="container">
+               <div class="row row-center">
+                  <div class="col-md-6 text-center">
+                     <h2 class="mar-b-lg">Need a Project?</h2>
+                     <p class="text-blur mar-b-lg">Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
+                  </div>
+               </div>
+               <div class="row row-center">
+                  <div class="col-md-8">
+                     <form class="contact">
+                        <div class="row">
+                           <div class="col-md">
+                              <div class="input-field">
+                                 <input type="text" name="name" placeholder="Your Name">
+                              </div>
+                           </div>
+                           <div class="col-md">
+                              <div class="input-field">
+                                 <input type="email" name="email" placeholder="Your Email">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="input-field">
+                           <input type="text" name="title" placeholder="Your Title">
+                        </div>
+                        <div class="input-field">
+                           <textarea name="name" placeholder="Your Comment" rows="6"></textarea>
+                        </div>
+                        <div class="input-field text-center">
+                           <button type="button" name="button" class="button button-primary button-click-me">Send Message</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="block block-dark block-reveal">
          <div class="container">
             <div class="row">
                <div class="col-md order-md-3">
