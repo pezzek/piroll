@@ -81,7 +81,10 @@ $(document).ready(function () {
       autoplay: true,
       autoplaySpeed: 3000,
       dots: true,
-      arrows: false
+      arrows: false,
+      adaptiveHeight: true,
+      fade: true,
+      cssEase: 'linear'
    });
 
    // Smooth Scroll
@@ -139,5 +142,7 @@ function onPlayerReady(event) {
 function onPlayerStateChange(event) {
    if (event.data == YT.PlayerState.PAUSED) {
       playButton.fadeIn();
+   } else if (event.data == YT.PlayerState.PLAYING) {
+      playButton.fadeOut();
    }
 }
