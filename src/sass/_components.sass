@@ -67,6 +67,9 @@
          color: #fff
          font-size: 3rem
 
+         &:focus
+            outline: 0
+
    &:hover
       .product-hover
          opacity: 1
@@ -100,9 +103,9 @@
          left: 50%
          transform: translate(-50%, -50%)
          color: #fff
-         width: 5em
-         height: 5em
-         line-height: 5em
+         width: 5rem
+         height: 5rem
+         line-height: 5rem
          text-align: center
          background-color: $primary-color
          +border-radius(50%)
@@ -128,6 +131,13 @@
 
       &-desc
          color: #888
+
+.fancybox-container
+   button
+      &:hover,
+      &:focus
+         background-color: transparent!important
+         box-shadow: none!important
 
 .slider
    &-wrapper:focus

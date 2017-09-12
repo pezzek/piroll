@@ -69,12 +69,6 @@ $(document).ready(function () {
       console.log(url);
    }
 
-   // Youtube API
-   var tag = document.createElement('script');
-   tag.src = "https://www.youtube.com/iframe_api";
-   var firstScriptTag = document.getElementsByTagName('script')[0];
-   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
    // Slider
    $('#quotes').slick({
       infinite: true,
@@ -82,7 +76,6 @@ $(document).ready(function () {
       autoplaySpeed: 3000,
       dots: true,
       arrows: false,
-      adaptiveHeight: true,
       fade: true,
       cssEase: 'linear'
    });
@@ -108,6 +101,16 @@ $(document).ready(function () {
       scale: 1,
       viewOffset: {top: 56}
    });
+
+   // Fancybox
+   $('[data-fancybox]').fancybox({
+      buttons: [
+         'thumbs',
+         'close'
+      ],
+      animationDuration: 500,
+      transitionEffect: "slide"
+   });
 });
 
 // Play button
@@ -119,7 +122,6 @@ function onYouTubeIframeAPIReady() {
       playerVars: {
          autoplay: 0,
          iv_load_policy: 3,
-         modestbranding: 1,
          rel: 0,
          showinfo: 0,
          theme: 'dark'

@@ -2,19 +2,22 @@
 <html>
    <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="public/img/logo.png">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans:400,700" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
       <link rel="stylesheet" href="public/css/pe-icon-7-stroke.css">
       <link rel="stylesheet" href="public/css/shoelace.css">
+      <link rel="stylesheet" href="public/css/jquery.fancybox.min.css">
       <link rel="stylesheet" href="public/plugins/slick/slick.css">
       <link rel="stylesheet" href="public/plugins/slick/slick-theme.css">
       <link rel="stylesheet" href="public/css/master.css">
       <script src="public/js/jquery.min.js"></script>
       <script src="public/js/shoelace.js"></script>
-      <script src="public/js/jquery.sticky-kit.min.js"></script>
       <script src="public/js/jquery.smooth-scroll.min.js"></script>
       <script src="public/js/scrollreveal.min.js"></script>
+      <script src="public/js/jquery.fancybox.min.js"></script>
+      <script src="public/js/youtube-api.js"></script>
       <script src="public/plugins/slick/slick.min.js"></script>
       <title>Piroll</title>
    </head>
@@ -31,13 +34,13 @@
                   <ul class="navbar-nav">
                      <li class="navbar-nav-close"><a href="#" class="button-close" id="nav-close"><i class="fa fa-bars"></i></a></li>
                      <li class="navbar-nav-logo"><a href="#">Piroll</a></li>
-                     <li><a href="#" smooth-scroll-target="#home">Home</a></li>
-                     <li><a href="#" smooth-scroll-target="#about">About</a></li>
-                     <li><a href="#" smooth-scroll-target="#work">Work</a></li>
-                     <li><a href="#" smooth-scroll-target="#process">Process</a></li>
-                     <li><a href="#" smooth-scroll-target="#services">Services</a></li>
-                     <li><a href="#" smooth-scroll-target="#testimonials">Testimonials</a></li>
-                     <li><a href="#" smooth-scroll-target="#contact">Contact</a></li>
+                     <li><a href="javascript:;" smooth-scroll-target="#home">Home</a></li>
+                     <li><a href="javascript:;" smooth-scroll-target="#about">About</a></li>
+                     <li><a href="javascript:;" smooth-scroll-target="#work">Work</a></li>
+                     <li><a href="javascript:;" smooth-scroll-target="#process">Process</a></li>
+                     <li><a href="javascript:;" smooth-scroll-target="#services">Services</a></li>
+                     <li><a href="javascript:;" smooth-scroll-target="#testimonials">Testimonials</a></li>
+                     <li><a href="javascript:;" smooth-scroll-target="#contact">Contact</a></li>
                   </ul>
                   <button class="navbar-toggler"><i class="fa fa-bars"></i></button>
                   <div class="navbar-backdrop"></div>
@@ -151,7 +154,7 @@
                            <img src="public/img/product-1.jpg" alt="Product 1" />
                         </div>
                         <div class="product-hover">
-                           <a href="#"><i class="pe-7s-look"></i></a>
+                           <a href="public/img/product-1.jpg" data-fancybox="product" data-caption="Product 1"><i class="pe-7s-look"></i></a>
                         </div>
                      </div>
                   </div>
@@ -161,7 +164,7 @@
                            <img src="public/img/product-2.jpg" alt="Product 1" />
                         </div>
                         <div class="product-hover">
-                           <a href="#"><i class="pe-7s-look"></i></a>
+                           <a href="public/img/product-2.jpg" data-fancybox="product" data-caption="Product 2"><i class="pe-7s-look"></i></a>
                         </div>
                      </div>
                   </div>
@@ -171,7 +174,7 @@
                            <img src="public/img/product-3.jpg" alt="Product 1" />
                         </div>
                         <div class="product-hover">
-                           <a href="#"><i class="pe-7s-look"></i></a>
+                           <a href="public/img/product-3.jpg" data-fancybox="product" data-caption="Product 3"><i class="pe-7s-look"></i></a>
                         </div>
                      </div>
                   </div>
@@ -181,7 +184,7 @@
                            <img src="public/img/product-4.jpg" alt="Product 1" />
                         </div>
                         <div class="product-hover">
-                           <a href="#"><i class="pe-7s-look"></i></a>
+                           <a href="public/img/product-4.jpg" data-fancybox="product" data-caption="Product 4"><i class="pe-7s-look"></i></a>
                         </div>
                      </div>
                   </div>
@@ -191,7 +194,7 @@
                            <img src="public/img/product-5.jpg" alt="Product 1" />
                         </div>
                         <div class="product-hover">
-                           <a href="#"><i class="pe-7s-look"></i></a>
+                           <a href="public/img/product-5.jpg" data-fancybox="product" data-caption="Product 5"><i class="pe-7s-look"></i></a>
                         </div>
                      </div>
                   </div>
@@ -201,7 +204,7 @@
                            <img src="public/img/product-6.jpg" alt="Product 1" />
                         </div>
                         <div class="product-hover">
-                           <a href="#"><i class="pe-7s-look"></i></a>
+                           <a href="public/img/product-6.jpg" data-fancybox="product" data-caption="Product 6"><i class="pe-7s-look"></i></a>
                         </div>
                      </div>
                   </div>
@@ -211,7 +214,7 @@
                            <img src="public/img/product-7.jpg" alt="Product 1" />
                         </div>
                         <div class="product-hover">
-                           <a href="#"><i class="pe-7s-look"></i></a>
+                           <a href="public/img/product-7.jpg" data-fancybox="product" data-caption="Product 7"><i class="pe-7s-look"></i></a>
                         </div>
                      </div>
                   </div>
@@ -221,7 +224,7 @@
                            <img src="public/img/product-8.jpg" alt="Product 1" />
                         </div>
                         <div class="product-hover">
-                           <a href="#"><i class="pe-7s-look"></i></a>
+                           <a href="public/img/product-8.jpg" data-fancybox="product" data-caption="Product 8"><i class="pe-7s-look"></i></a>
                         </div>
                      </div>
                   </div>
@@ -248,10 +251,8 @@
                      <div class="embed">
                         <div class="embed-video" id="player"></div>
                         <div class="embed-play_button" id="playButton"><span><i class="fa fa-play"></i></span></div>
-                        <div class="embed-">
-
-                        </div>
                         <script>
+                           startYoutubeAPI();
                            var videoId = 'DRepbLikfNA';
                         </script>
                      </div>

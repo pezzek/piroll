@@ -299,6 +299,8 @@ img.img-responsive {
     .product-hover a {
       color: #fff;
       font-size: 3rem; }
+      .product-hover a:focus {
+        outline: 0; }
   .product:hover .product-hover {
     opacity: 1; }
 
@@ -328,9 +330,9 @@ img.img-responsive {
       left: 50%;
       transform: translate(-50%, -50%);
       color: #fff;
-      width: 5em;
-      height: 5em;
-      line-height: 5em;
+      width: 5rem;
+      height: 5rem;
+      line-height: 5rem;
       text-align: center;
       background-color: #10C9C3;
       -webkit-border-radius: 50%;
@@ -354,6 +356,10 @@ img.img-responsive {
       font-size: 0.8125rem; }
     .work-attributes-desc {
       color: #888; }
+
+.fancybox-container button:hover, .fancybox-container button:focus {
+  background-color: transparent !important;
+  box-shadow: none !important; }
 
 .slider-wrapper:focus {
   outline: none; }
